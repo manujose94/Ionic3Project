@@ -1,0 +1,38 @@
+<ion-menu [content]="content">
+
+  <ion-header>
+  
+    <ion-navbar>
+      <ion-title>Menu</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  <ion-content>
+
+      <img src="assets/imgs/ic_store_black_24dp.png" class="menu-logo"/>
+
+  <ion-list>
+      <ion-list-header>
+          GestionComercial
+      </ion-list-header>
+    <button ion-item menuClose *ngFor="let p of pages" (click)="openPage(p)">
+      <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>
+      {{ p.title }}
+    </button>
+  </ion-list>
+ 
+
+  <ion-list>
+    <ion-list-header>
+      Help
+    </ion-list-header>
+    <button menuClose ion-item *ngFor="let p of helpMenuItems" (click)="openPage(p)">
+      <ion-icon item-left [name]="p.icon"></ion-icon>
+      {{p.title}}
+    </button>
+  </ion-list>
+</ion-content>
+  </ion-menu>
+  
+  <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

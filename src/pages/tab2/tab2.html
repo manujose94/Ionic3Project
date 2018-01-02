@@ -1,0 +1,27 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-buttons start left>
+        <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-buttons>
+
+    <ion-title>GestionComercial</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+
+    <button ion-item *ngFor="let user of users" (click)="openUserDetail(user)">
+      <!-- <ion-avatar item-start>
+        <img [src]="user.picture.medium">
+      </ion-avatar> -->
+      <h2>{{ user.Usuario | uppercase }}</h2>
+      <p>{{ user.PassWord }}</p>
+    </button>
+  </ion-list>
+</ion-content>
