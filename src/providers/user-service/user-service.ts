@@ -10,7 +10,7 @@ import 'rxjs/Rx';
   and Angular DI.
   
   -First create a provider by using CLI command
-    ionic g provider .\providers\user-service\user_service
+    ionic g provider user_service
 */
 
 let brokersURL = SERVER_URL + 'api/user/';
