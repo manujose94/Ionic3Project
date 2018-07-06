@@ -1,6 +1,6 @@
 ﻿# Ionic3Project
 
-Sibir proyectos desde la Terminal de VSCODE:
+Sibir proyectos desde la Terminal de VSCODE:https://ionicframework.com/docs/pro/basics/git/
 
 ﻿La primera vez
  
