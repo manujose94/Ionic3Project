@@ -1,8 +1,6 @@
 ﻿# Ionic3Project
 
-Sibir proyectos desde la Terminal de VSCODE:https://ionicframework.com/docs/pro/basics/git/
-
-﻿La primera vez
+﻿Firts time
  
 git init
 
@@ -14,7 +12,7 @@ git remote add origin https://github.com/manujose94/Ionic3Project.git
 
 git push origin master --force
 
-Despues de normal ya:
+Later:
 
  git commit -am 'API send email'
  
